@@ -1,5 +1,3 @@
-
-
 const botonMenu = document.querySelector(".button__1");
 const botonCerrar = document.querySelector(".botoncerrar");
 const menu = document.querySelector(".menudesplegable");
@@ -25,43 +23,28 @@ boton2Cerrar.addEventListener("click", function() {
 });
 
 
-
-
-
-fetch('https://my-json-server.typicode.com/leandrofinten123/Proyecto1/imagenes')
+fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
 .then(response => response.json())
 .then(data => {
 const contenidoHeader = document.querySelector('.titulo__1');
-contenidoHeader.innerHTML = `
-<img class="logo__1" src="${data.imagen1}" alt ="">
+contenidoHeader.innerHTML =`
+<img class="logo__1" src="${data.imagen1}" alt="">
  `;})
 .catch(error => console.error('Error al leer el archivo JSON:', error));
 
-
-fetch('https://my-json-server.typicode.com/leandrofinten123/Proyecto1/imagenes')
-.then(response => response.json())
-.then(data => {
-const contenidoHeader = document.querySelector('.titulo__2');
-contenidoHeader.innerHTML = `
-<img class="logo__1" src="${data.imagen1}" alt ="">
- `;})
-.catch(error => console.error('Error al leer el archivo JSON:', error));
-
-
-
-fetch('https://my-json-server.typicode.com/leandrofinten123/Proyecto1/imagenes')
-.then(response => response.json())
-.then(data => {
-const contenidomain = document.querySelector('.carousel-inner');
-contenidomain.innerHTML = `
-<div class="carousel-item active">
-            <img src="${data.imagen4}" class="d-block w-100" alt="Imagen 1">
-          </div>
-          <div class="carousel-item">
-            <img src="${data.imagen5}" class="d-block w-100" alt="Imagen 2">
-          </div>
-          <div class="carousel-item">
-            <img src="${data.imagen7}" class="d-block w-100" alt="Imagen 3">
-          </div>
- `;})
-.catch(error => console.error('Error al leer el archivo JSON:', error));
+fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
+  .then(response => response.json())
+  .then(data => {
+    const selectors = ['.swiper-img2', '.swiper-img3', '.swiper-img4', '.swiper-img5', '.swiper-img6','.swiper-img'];
+    const images = [data.imagen2, data.imagen3, data.imagen4, data.imagen5, data.imagen6,data.imagen15];
+    
+    selectors.forEach((selector, index) => {
+      const contenidoMain = document.querySelector(selector);
+      if (contenidoMain && images[index]) {
+        contenidoMain.innerHTML = `<img src="${images[index]}" alt="">`;
+      } else {
+        console.error(`No se encontró el contenedor para el selector ${selector} o la imagen no está disponible`);
+      }
+    });
+  })
+  .catch(error => console.error('Error al leer el archivo JSON:', error));

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reclamos</title>
+    <link rel="stylesheet" href="stykesReclamos.css">
+</head>
+<body>
+    <h1>FORMULARIO DE RECLAMOS</h1>
+    <form action="http://ejempledeactionreclamos.com/submit.php" method="post">
+    <br>
+    <h3>Seleccione la raíz de su reclamo:</h3>
+    <br>
+    <div class="selector">
+    <input type="radio" name="reclamo" value="1"> Fallas del producto.
+    <input type="radio" name="reclamo" value="2"> Problemas de facturación.
+    <input type="radio" name="reclamo" value="3"> Prolemas en la página.
+    <input type="radio" name="reclamo" value="4"> Otro.
+    </div>
+    <br>
+    <br>
+    <label for="detalle">Danos los detalles de tu reclamo: </label>
+    <br>
+    <textarea name="detalleReclamo" id="detalleReclamo"> Escribe los detalles de tu reclamo</textarea>
+    <div class="cont-submit"><a href="index.html">SUBMIT</a></div>
+    </form>
+</body>
+</html>

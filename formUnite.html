@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para postularte</title>
+    <link rel="stylesheet" href="stylesForm.css">
+</head>
+<body>
+    <h1>FORMULARIO DE SOLICITUD</h1>
+    <form action="http://ejempledeaction.com/submit.php" method="post">
+    <h2>DATOS PERSONALES</h2>
+    <section class="datosPersonales">
+        <input type="text" name="Nombres" id="nombres" placeholder="Ingrese sus nombres">
+        <input type="text" name="Apellido/s" id="apellido" placeholder="Ingrese su apellido">
+        <input type="date" name="Fecha de Nacimiento" id="nacimiento" placeholder="Ingrese su fecha de nacimiento">
+        <input type="email" name="Correo" id="correo" placeholder="Ingrese su correo electronico">
+        <input type="" name="Cel" id="cel" placeholder="Ingrese su número de contacto celular sin espacios ni guiones">
+        <input type="text" name="Pais" id="pais" placeholder="Pais de domicilio">
+        <input type="text" name="provincia" id="provincia" placeholder="Provincia de domicilio">
+        <input type="text" name="Localidad" id="localidad" placeholder="Localidad de domicilio">
+    </section>
+    <br>       
+    <h2>TENGO EXPERIENCIA EN LAS SIGUIENTES AREAS:</h2> 
+    <br>
+    <section class="experiencia">
+        <label for=""> Ventas <input type="checkbox"></label>
+        <label for=""> Desarrollo de software <input type="checkbox"></label>
+        <label for=""> Atención al público <input type="checkbox"></label>
+        <label for=""> Marketing <input type="checkbox"></label>
+        <label for=""> Logística <input type="checkbox"></label>
+        <label for=""> Diseño de página web <input type="checkbox"></label>
+    </section>
+    <br>
+    <section class="why">
+       <label class="cuentanos"> Cuentanos de tí:</label>
+       <br>
+       <textarea name="" id="">Escribe una pequeña reseña describiendo tus habilidades</textarea>
+    </section>
+    <div class="cont-submit"><a href="index.html">SUBMIT</a></div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+
+* {background-color: rgb(35, 35, 222);
+color: aqua;}
+h1 {text-align: center;
+    color: gold;
+    font-weight: bold;
+    text-decoration: underline;}
+
+.datosPersonales{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    row-gap: 2px;
+    column-gap: 4px;
+}
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cont-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-submit a{
+    border: 1px solid black;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 5px;
+    padding: 7px;
+    text-decoration: none;
+}
+
+.cont-submit a:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid gold;
+}
+
+@media(max-width:790px){
+    .datosPersonales{
+        width: 100%;
+       
+    }
+}

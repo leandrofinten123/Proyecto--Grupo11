@@ -1,16 +1,19 @@
 {
     "imagenes":{
-        "imagen1" :"Images/LOGO.jpg",
-        "imagen2" :"Images/ACvalhalla.jpg",
-        "imagen3": "Images/RE4.jpg",
-        "imagen4": "Images/sekiro.jpg",
-        "imagen5": "Images/Dark souls3.jpg",
-        "imagen6": "Images/elden ring.jpg",
-        "imagen7": "Images/Gta5.jpg",
-        "imagen8": "Images/horizon.jpg",
-        "imagen9": "Images/the witcher.jpg",
-        "imagen10": "Images/W3.jpg",
-        "imagen11": "",
-        "imagen12": ""
+        "imagen1" :"img/LOGOheader.jpg",
+        "imagen2" :"img/1.jpg",
+        "imagen3": "img/2.jpg",
+        "imagen4": "img/3.jpg",
+        "imagen5": "img/4.jpg",
+        "imagen6": "img/5.jpg",
+        "imagen7": "img/6.jpg",
+        "imagen8": "img/7.jpg",
+        "imagen9": "img/8.jpg",
+        "imagen10": "img/9.jpg",
+        "imagen11": "img/10.jpg",
+        "imagen12": "img/11.jpg",
+        "imagen13": "img/12.jpg",
+        "imagen14": "img/13.jpg",
+        "imagen15": "img/img1.png"
     }
 }

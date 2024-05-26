@@ -1,0 +1,83 @@
+:root{
+    --bg-color: rgb(14, 13, 13);
+    --bg-inputs: rgb(247, 247, 247);
+    --bg-boton:rgb(233, 105, 105);
+    --bg-letras:black;
+}
+
+*{
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+h1{
+    
+    text-transform: capitalize;
+    color: var(--bg-inputs);
+    padding-top: 25%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 5%;
+    background-color: var(--bg-color);
+    border: solid 1px white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+div>input{
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.name{
+    flex: 1 0 140px;
+    color: var(--bg-letras);
+    background-color: var(--bg-inputs);
+}
+
+.pss{
+    flex:1 0 120px;
+    color: var(--bg-letras);
+    background-color: var(--bg-inputs);
+}
+
+a.ingreso{
+    display: flex;
+    flex:1 0 60px;
+    border-radius: 5px;
+    color:var(--bg-letras);
+    background-color: var(--bg-boton);
+    font-size: 15px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingreso:hover{
+    background-color: rgb(190, 2, 2);
+    color: black;
+}
+
+
+
+
+.ayuda{
+    flex:1 0 120px;  
+    color: var(--bg-inputs);
+    padding-left: 66%;
+    text-decoration: none;
+  }
+
+.ayuda:hover{
+    color: red;
+}
