@@ -1,0 +1,16 @@
+{
+    "imagenes":{
+        "imagen1" :"Images/LOGO.jpg",
+        "imagen2" :"Images/ACvalhalla.jpg",
+        "imagen3": "Images/RE4.jpg",
+        "imagen4": "Images/sekiro.jpg",
+        "imagen5": "Images/Dark souls3.jpg",
+        "imagen6": "Images/elden ring.jpg",
+        "imagen7": "Images/Gta5.jpg",
+        "imagen8": "Images/horizon.jpg",
+        "imagen9": "Images/the witcher.jpg",
+        "imagen10": "Images/W3.jpg",
+        "imagen11": "",
+        "imagen12": ""
+    }
+}

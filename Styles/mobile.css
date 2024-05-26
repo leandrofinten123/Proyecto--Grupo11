@@ -1,0 +1,135 @@
+
+@media (max-width:610px) {
+    .logo__1{
+        width: 100%;
+        padding: 16px;
+    }
+    .header__1{
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        height: 200px;
+        border-bottom: 1px solid black;
+    }
+    .button__1{
+        display: flex;
+        width: 10%;
+        height: 40px;
+        color: white;
+        background-color: skyblue;
+        cursor: pointer;
+    }
+
+    .sonic{
+        display: flex;
+        width: 10%;
+        height: 40px;
+    }
+    .titulo__1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: rgb(232, 227, 227);
+    }
+    .titulo__2{
+        display: none;
+    }
+    .header__2{
+        display: flex;
+        padding: 16px;
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+    .buscador{
+        width: 90%;
+        height: 35px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        border: none;
+    }
+    .buscador__2{
+        width: 8%;
+        height: 35px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border: none;
+        background-color: white;
+        border-left: 1px solid gray;  
+    }
+    .header__3{
+        display: none;
+    }
+    .header__4{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+    
+    .menudesplegable{
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        left: -400px;
+        width: 400px;
+        height: 100%;
+        background-color: #f4f4f4;
+        transition: left 0.3s ease;
+        gap: 20px;
+        z-index: 590;
+    }
+    .menudesplegable.mostrar{
+        left: 0;
+    }
+    .menudesplegable ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .menudesplegable ul li {
+        padding: 10px;
+    }
+      
+    .menudesplegable ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+    }
+     
+    .menudesplegable2{
+        display: none;
+    }
+    .botoncerrar{
+        display: flex;
+        justify-content: center;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .menuprincipal{
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid black;
+        padding-top: 50px;
+        background-color: gray;
+    }
+    .carousel {
+        width: 60%;
+        z-index: 500;
+    }
+
+
+
+.main__mobile{
+    display: flex;
+    justify-content: center;
+    color: red;
+    background-color: #333;
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+
+
+    }
