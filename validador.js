@@ -1,4 +1,6 @@
-  function validarFormulario() {
+ function validarFormulario(event) {
+            event.preventDefault(); // Prevenir el envío automático del formulario
+
             //Se declaran las variables
             var email = document.getElementById("email").value;
             var password = document.getElementById("password").value;
@@ -15,6 +17,7 @@
                 emailError.style.display = "block";
                 isValid = false;
             } else {
+                emailError.textContent = ""; // Limpiar mensaje de error
                 emailError.style.display = "none";
             }
 
@@ -24,13 +27,12 @@
                 passwordError.style.display = "block";
                 isValid = false;
             } else {
+                passwordError.textContent = ""; // Limpiar mensaje de error
                 passwordError.style.display = "none";
             }
 
             if (isValid) {
                 // Redirigir a index.html si todo está correcto
                 window.location.href = "index.html";
-                // Prevenir el envío del formulario
-                return false;
             }
         }
