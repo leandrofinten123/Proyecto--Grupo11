@@ -2,8 +2,10 @@ function validarFormulario()
     //Se declaran las variables
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
+
     var emailError = document.getElementById("emailError");
     var passwordError = document.getElementById("passwordError");
+
     var isValid = true;
     // Validar correo electrónico
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
