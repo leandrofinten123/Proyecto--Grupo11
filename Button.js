@@ -22,6 +22,7 @@ boton2Cerrar.addEventListener("click", function() {
   menu2.classList.remove("mostrar");
 });
 
+//Se ingresa la imagen del logo por medio de api
 
 fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
 .then(response => response.json())
@@ -31,6 +32,8 @@ contenidoHeader.innerHTML =`
 <img class="logo__1" src="${data.imagen1}" alt="">
  `;})
 .catch(error => console.error('Error al leer el archivo JSON:', error));
+
+//Se ingresan las imagenes del Slider 1 por medio de api
 
 fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
   .then(response => response.json())
@@ -48,3 +51,23 @@ fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
     });
   })
   .catch(error => console.error('Error al leer el archivo JSON:', error));
+
+
+//Se ingresan las imagenes del Slider 2 por medio de api
+
+fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
+.then(response => response.json())
+.then(data => {
+  const selectors = ['.swiper-img7', '.swiper-img8', '.swiper-img9', '.swiper-img10', '.swiper-img11','.swiper-img12'];
+  const images = [data.imagen7, data.imagen8, data.imagen9, data.imagen10, data.imagen11,data.imagen12];
+  
+  selectors.forEach((selector, index) => {
+    const contenidoMain = document.querySelector(selector);
+    if (contenidoMain && images[index]) {
+      contenidoMain.innerHTML = `<img src="${images[index]}" alt="">`;
+    } else {
+      console.error(`No se encontró el contenedor para el selector ${selector} o la imagen no está disponible`);
+    }
+  });
+})
+.catch(error => console.error('Error al leer el archivo JSON:', error));
