@@ -1,83 +1,64 @@
 :root{
-    --bg-color: rgb(14, 13, 13);
-    --bg-inputs: rgb(247, 247, 247);
-    --bg-boton:rgb(233, 105, 105);
-    --bg-letras:black;
+    --bg-registro:#f0f0f0;
+    --bg-formulario:#ffffff;
+    --bg-btn: #28a745;
 }
 
-*{
-    font-family: "Trebuchet MS", Verdana, sans-serif;
-}
 
-body{
-    background-color: var(--bg-color);
-}
-
-h1{
-    
-    text-transform: capitalize;
-    color: var(--bg-inputs);
-    padding-top: 25%;
-    text-align: center;
-    font-size: 50px;
-}
-
-.container{
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-registro);
     display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 5%;
-    background-color: var(--bg-color);
-    border: solid 1px white;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-div>input{
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 15px;
-}
-
-.name{
-    flex: 1 0 140px;
-    color: var(--bg-letras);
-    background-color: var(--bg-inputs);
-}
-
-.pss{
-    flex:1 0 120px;
-    color: var(--bg-letras);
-    background-color: var(--bg-inputs);
-}
-
-a.ingreso{
-    display: flex;
-    flex:1 0 60px;
-    border-radius: 5px;
-    color:var(--bg-letras);
-    background-color: var(--bg-boton);
-    font-size: 15px;
-    text-decoration: none;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.ingreso:hover{
-    background-color: rgb(190, 2, 2);
-    color: black;
+.form-container {
+    background-color: var(--bg-formulario);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
+h2 {
+    margin-bottom: 20px;
+}
 
+label {
+    display: block;
+    margin-bottom: 5px;
+}
 
+input[type="email"],
+input[type="password"] {
+    width: 94%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
 
-.ayuda{
-    flex:1 0 120px;  
-    color: var(--bg-inputs);
-    padding-left: 66%;
-    text-decoration: none;
-  }
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--bg-btn);
+    color: var(--bg-registro);
+    font-size: 16px;
+    cursor: pointer;
+}
 
-.ayuda:hover{
+button:hover {
+    background-color: var(--bg-btn);
+}
+
+.error {
     color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: none;
 }
