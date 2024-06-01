@@ -18,7 +18,7 @@ body {
 .form-container {
     background-color: var(--bg-formulario);
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
 }
@@ -47,13 +47,14 @@ button {
     border: none;
     border-radius: 4px;
     background-color: var(--bg-btn);
-    color: var(--bg-registro);
+    color: var(--bg-formulario);
     font-size: 16px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: var(--bg-btn);
+    background: #3fc13f;
+    color: black;
 }
 
 .error {
