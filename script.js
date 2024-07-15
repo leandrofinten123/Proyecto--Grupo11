@@ -4,6 +4,7 @@ const swiper = new Swiper('.swiper-cero', {
     loop: true,
     effect: "slider",
     slidesPerGroupAuto: true,
+    spaceBetween: 15,
     autoplay: {delay:15000, pauseOnMouseEnter: true, disableOnInteraction: false,},
 
     breakpoints: {
