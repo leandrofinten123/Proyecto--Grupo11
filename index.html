@@ -322,10 +322,10 @@
                     <small>&copy;2023 PUROVICIO.COM todos los derechos reservados</small>
                 </div>
             </div>
-    </footer>
-   <section>
-    <h2>Recomendanos un Juego</h2>
-    <form id="crear-juego-form">
+   <!-- Backend para la api -->
+   <section class="section-api">
+    <div class="section-api-h2"><h2 >Recomendanos un Juego</h2></div>
+    <form id="crear-juego-form" class="form-api">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
         <br><br>
@@ -335,13 +335,15 @@
         <label for="imagen">Enlace de Imagen:</label>
         <input type="text" id="imagen" name="imagen" required>
         <br><br>
-        <button type="submit">Guardar Juego</button>
+        <button type="submit" class="btn-obtener">Guardar Juego</button>
     </form>
-    <h2>Juegos Recomendados</h2>
-    <button id="btn-obtener">Mostrar Juegos</button>
-    <div id="juegos-container">
+    
+    <div class="section-api-h2-2">Juegos Recomendados</h2></div>
+    <div class="btn-api"><button id="btn-obtener" >Mostrar Juegos</button></div>
+    <div id="juegos-container" class="juegos-container-api">
     </div>
    </section>
+</footer>
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script src="script.js"></script>
    <script src="Button.js"></script>

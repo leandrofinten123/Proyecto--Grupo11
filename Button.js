@@ -49,6 +49,24 @@ fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
   })
   .catch(error => console.error('Error al leer el archivo JSON:', error));
 
+
+  fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
+  .then(response => response.json())
+  .then(data => {
+    const selectors = ['.swiper-img7', '.swiper-img8', '.swiper-img9', '.swiper-img10', '.swiper-img11','.swiper-img12'];
+    const images = [data.imagen7, data.imagen8, data.imagen9, data.imagen10, data.imagen11,data.imagen12];
+    
+    selectors.forEach((selector, index) => {
+      const contenidoMain = document.querySelector(selector);
+      if (contenidoMain && images[index]) {
+        contenidoMain.innerHTML = `<img src="${images[index]}" alt="">`;
+      } else {
+        console.error(`No se encontró el contenedor para el selector ${selector} o la imagen no está disponible`);
+      }
+    });
+  })
+  .catch(error => console.error('Error al leer el archivo JSON:', error));
+
 //backend
 
 
@@ -89,11 +107,11 @@ document.getElementById('crear-juego-form').addEventListener('submit', function(
 
 // Función para crear un elemento de juego con botón de eliminar
 function crearElementoJuego(juego) {
-  const juegoDiv = document.createElement('div');
+  const juegoDiv = document.createElement('juegos-container-api');
   juegoDiv.innerHTML = `
-      <h3>${juego.nombre}</h3>
+      <h3 class="h3-juegos-api">${juego.nombre}</h3>
       <p><strong>Género:</strong> ${juego.genero}</p>
-      <img class="logo__1" src="${juego.imagen}" alt="">
+      <img class="logo_api" src="${juego.imagen}" alt="">
       <button class="btn-eliminar" data-id="${juego.id}">Eliminar</button>
   `;
   return juegoDiv;
@@ -150,7 +168,6 @@ function eliminarJuego(id) {
       alert('Hubo un problema al eliminar el juego. Consulta la consola para más detalles.');
   });
 }
-
 
 
 
